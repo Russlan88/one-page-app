@@ -3,7 +3,8 @@
 import React from 'react';
 import './assets/main.scss';
 import Card from '../src/components/3d-card/card';
-import Hero from '../src/hero/hero';
+import Hero from '../src/components/hero/hero';
+import Footer from '../src/components/footer/footer';
 
 class App extends React.Component {
 	render() {
@@ -24,6 +25,8 @@ class App extends React.Component {
 						bg="http://esensifiksi.com/tf/halvor/dark/assets/img/work/2.jpg"
 					/>
 				</div>
+
+				<Footer />
 			</div>
 		);
 	}

@@ -2,9 +2,13 @@
 
 header {
 	height: 100vh;
-	background: #111111;
-	background-image: url(http://demo.evatheme.com/html/night-room/images/big-slider/1.jpg);
-	// background-blend-mode: multiply;
+	background: #000;
+	background-image: url(../assets/img/hero.jpg);
+	background-image: url(/static/media/hero.d24629b4.jpg);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: center center;
 
 	.container-fluid {
 		display: flex;
@@ -37,7 +41,7 @@ header {
 	}
 
 	.arrows path {
-		stroke: #2994d1;
+		stroke: #b12667;
 		fill: transparent;
 		stroke-width: 1px;
 		animation: arrow 2s infinite;
@@ -175,4 +179,15 @@ img {
 .work-item {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+}
+
+// Footer
+
+footer {
+	text-align: center;
+	padding: 50px;
+}
+
+.heart {
+	color: #b12667;
 }
