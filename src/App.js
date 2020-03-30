@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @format */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import './assets/main.scss';
+import Card from '../src/components/3d-card/card';
+import Hero from '../src/hero/hero';
+
+class App extends React.Component {
+	render() {
+		return (
+			<div className="App">
+				<Hero />
+				<div className="grid-container">
+					<Card
+						name="LA PRIMERA"
+						bg="http://esensifiksi.com/tf/halvor/dark/assets/img/work/1.jpg"
+					/>
+					<Card
+						name="LA SECONDERA"
+						bg="http://esensifiksi.com/tf/halvor/dark/assets/img/work/5.jpg"
+					/>
+					<Card
+						name="LA TERZERA"
+						bg="http://esensifiksi.com/tf/halvor/dark/assets/img/work/2.jpg"
+					/>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default App;
