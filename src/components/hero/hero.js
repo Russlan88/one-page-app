@@ -1,24 +1,12 @@
 /** @format */
 
 import React from 'react';
+import Navigation from '../navigation/index';
 
 const Hero = () => {
 	return (
 		<header>
-			<div className="container-fluid">
-				<div className="menu-burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-			{/* <ul className="nav">
-					<li>Home</li>
-					<li>Blog</li>
-					<li>Gallery</li>
-					<li>About us</li>
-					<li>Contact us</li>
-				</ul> */}
+			<Navigation />
 			<div className="scrollDown">
 				<svg className="arrows">
 					<path className="a1" d="M0 0 L30 32 L60 0"></path>

@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "gsap": "^3.2.6",
     "react-tilt": "^0.1.4"
   }
 }
