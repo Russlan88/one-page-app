@@ -6,6 +6,7 @@ import './assets/main.scss';
 import Card from '../src/components/3d-card/card';
 import Hero from '../src/components/hero/hero';
 import Footer from '../src/components/footer/footer';
+import MainContainer from '../src/components/main/main.jsx';
 import { TweenMax, Power1 } from 'gsap'
 
 const Layout = ({ children, ...props }) => {
@@ -101,6 +102,7 @@ const Layout = ({ children, ...props }) => {
 			noCursor.addEventListener("mouseleave", noCursorOut);
 		});
 	})
+
 	return (
 		<div className="App">
 
@@ -120,10 +122,13 @@ const Layout = ({ children, ...props }) => {
 				/>
 			</div>
 
+			<MainContainer />
+
 			<Footer />
 		</div>
 	);
 }
+
 Layout.propTypes = {
 	children: PropTypes.node.isRequired
 }
