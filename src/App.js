@@ -7,6 +7,7 @@ import Card from '../src/components/3d-card/card';
 import Hero from '../src/components/hero/hero';
 import Footer from '../src/components/footer/footer';
 import { TweenMax, Power1 } from 'gsap'
+import MainContainer from './components/hexagon/hexagon';
 
 const Layout = ({ children, ...props }) => {
 	const { headerStyle, headerLayout } = props;
@@ -119,7 +120,7 @@ const Layout = ({ children, ...props }) => {
 					bg="http://esensifiksi.com/tf/halvor/dark/assets/img/work/2.jpg"
 				/>
 			</div>
-
+			<MainContainer />
 			<Footer />
 		</div>
 	);
