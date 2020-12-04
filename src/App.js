@@ -121,11 +121,9 @@ const Layout = ({ children, ...props }) => {
 					bg="http://esensifiksi.com/tf/halvor/dark/assets/img/work/2.jpg"
 				/>
 			</div>
-
 			<MainContainer />
-
 			<Footer />
-		</div>
+		</div >
 	);
 }
 
